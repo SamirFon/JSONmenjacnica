@@ -1,0 +1,14 @@
+{
+  "izvornaValuta": "USD",
+  "krajnjaValuta": "EUR",
+  "početniIznos": 100.0,
+  "konvertovaniIznos": 84.0401,
+  "datumTransakcije": {
+    "year": 2020,
+    "month": 9,
+    "dayOfMonth": 1,
+    "hourOfDay": 21,
+    "minute": 19,
+    "second": 33
+  }
+}

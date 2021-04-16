@@ -1,0 +1,14 @@
+{
+  "izvornaValuta": "USD",
+  "krajnjaValuta": "CAD",
+  "početniIznos": 4112.0,
+  "konvertovaniIznos": 5171.4568,
+  "datumTransakcije": {
+    "year": 2021,
+    "month": 3,
+    "dayOfMonth": 13,
+    "hourOfDay": 21,
+    "minute": 7,
+    "second": 18
+  }
+}
