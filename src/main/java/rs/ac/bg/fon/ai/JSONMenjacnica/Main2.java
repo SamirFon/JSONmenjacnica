@@ -50,6 +50,21 @@ public class Main2 {
 			t.setIzvornaValuta("USD");
 			t.setKrajnjaValuta("EUR");
 			t.setPočetniIznos(100);
+			
+			Transakcija t1 = new Transakcija();
+
+			t1.setDatumTransakcije(dan);
+			t1.setIzvornaValuta("USD");
+			t1.setKrajnjaValuta("CAD");
+			t1.setPočetniIznos(100);
+			
+			Transakcija t2 = new Transakcija();
+
+			t2.setDatumTransakcije(dan);
+			t2.setIzvornaValuta("USD");
+			t2.setKrajnjaValuta("CHF");
+			t2.setPočetniIznos(100);
+			
 
 			if (t.getKrajnjaValuta().equals("EUR")) {
 
@@ -57,29 +72,37 @@ public class Main2 {
 
 				t.setKonvertovaniIznos(konvertovaniIznos);
 
-				gson.toJson(t, file);
-			} 
-			else if (t.getKrajnjaValuta().equals("CAD")) {
-				double konvertovaniIznos1 = t.getPočetniIznos() * kurs1;
-
-				t.setKonvertovaniIznos(konvertovaniIznos1);
-
-				gson.toJson(t, file);
 			}
+			 
+			
+				if (t1.getKrajnjaValuta().equals("CAD")) {
+				double konvertovaniIznos1 = t1.getPočetniIznos() * kurs1;
 
-			else {
-				double konvertovaniIznos2 = t.getPočetniIznos() * kurs2;
+				t1.setKonvertovaniIznos(konvertovaniIznos1);
+			 
+				}
+				
+	
+			if	(t2.getKrajnjaValuta().equals("CHF")){
+				double konvertovaniIznos2 = t2.getPočetniIznos() * kurs2;
 
-				t.setKonvertovaniIznos(konvertovaniIznos2);
-
-				gson.toJson(t, file);
-
+				t2.setKonvertovaniIznos(konvertovaniIznos2);
 			}
+		
+
+					
+			
+		 	Transakcija [] transakcije = {t,t1,t2};
+			
+			
+			
+			gson.toJson(transakcije, file);
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-	}
+		}
+	
 
 }

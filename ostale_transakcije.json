@@ -1,14 +1,44 @@
-{
-  "izvornaValuta": "USD",
-  "krajnjaValuta": "EUR",
-  "početniIznos": 100.0,
-  "konvertovaniIznos": 84.0401,
-  "datumTransakcije": {
-    "year": 2020,
-    "month": 9,
-    "dayOfMonth": 1,
-    "hourOfDay": 21,
-    "minute": 19,
-    "second": 33
+[
+  {
+    "izvornaValuta": "USD",
+    "krajnjaValuta": "EUR",
+    "početniIznos": 100.0,
+    "konvertovaniIznos": 83.8725,
+    "datumTransakcije": {
+      "year": 2020,
+      "month": 9,
+      "dayOfMonth": 1,
+      "hourOfDay": 16,
+      "minute": 45,
+      "second": 38
+    }
+  },
+  {
+    "izvornaValuta": "USD",
+    "krajnjaValuta": "CAD",
+    "početniIznos": 100.0,
+    "konvertovaniIznos": 130.555,
+    "datumTransakcije": {
+      "year": 2020,
+      "month": 9,
+      "dayOfMonth": 1,
+      "hourOfDay": 16,
+      "minute": 45,
+      "second": 38
+    }
+  },
+  {
+    "izvornaValuta": "USD",
+    "krajnjaValuta": "CHF",
+    "početniIznos": 100.0,
+    "konvertovaniIznos": 90.94200000000001,
+    "datumTransakcije": {
+      "year": 2020,
+      "month": 9,
+      "dayOfMonth": 1,
+      "hourOfDay": 16,
+      "minute": 45,
+      "second": 38
+    }
   }
-}
+]
